@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MEMORIES COLLECTION">
+    <title>MEMORIES COLLECTION</title>
+    <link rel="stylesheet" href="../css/sanitize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&family=Zen+Kurenaido&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="../javascript/shiro4.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="wrap">
+            <div class="nav-title-container">
+                <a href="../index.html">
+                    <img class="big-title" src="../images/top-logo.png" alt="トップロゴ">
+                </a>
+            </div>
+            <input type="checkbox" id="navBtn">
+            <label for="navBtn" class="open"><span></span></label>
+            <nav class="nav-container">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="./about-site.html" class="nav-link">このサイトについて</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="../index.html#creation-flow-title" class="nav-link">作成の流れ</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="../html/create.html" class="nav-link">作成する</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="body-container body-container-therd create-ticketsPage">
+
+        <div class="scroll-down" id="scrollDown">
+            <div class="arrow" id="arrow"></div>
+            <span id="topOrscroll">Scroll</span>
+        </div>
+
+
+        <section class="ticket-download-content">
+            <div>
+                <h2 class="ticket-download-temp-title">
+                    選択したデザイン
+                </h2>
+                <img src="../images/shiro-4.png" alt="選択したテンプレート画像" class="ticket-download-temp-img">
+            </div>
+
+
+            <section class="ticket-download-input-coatainer">
+                <ul>
+                    <li class="ticket-download-input-list">
+                        <label for="input1">
+                            <h2 class="ticket-download-input-title input-title1">
+                                タイトル（10文字以内）
+                            </h2>
+                        </label>
+
+                        <input type="text" class="ticket-download-input" id="input1" maxlength="10">
+                    </li>
+                    <li class="ticket-download-input-list">
+                        <label for="input2">
+                            <h2 class="ticket-download-input-title input-title2">
+                                上映時間 （記入例 15：50 ~）
+                            </h2>
+                        </label>
+                        <input type="text" class="ticket-download-input" id="input2">
+                    </li>
+                    <li class="ticket-download-input-list">
+                        <label for="input3">
+                            <h2 class="ticket-download-input-title input-title3">
+                                映画を見た日時  (記入例 25年11月25日(水))
+                            </h2>
+                        </label>
+                        <input type="text" class="ticket-download-input" id="input3">
+                    </li>
+                    <li class="ticket-download-input-list">
+                        <label for="input4">
+                            <h2 class="ticket-download-input-title input-title4">
+                                映画を見た時の値段  (記入例 大学生:¥1,500)
+                            </h2>
+                        </label>
+                        <input type="text" class="ticket-download-input" id="input4">
+                    </li>
+                    <li class="ticket-download-input-list">
+
+                        <label for="input5">
+                            <h2 class="ticket-download-input-title input-title5">
+                                スクリーン番号 (記入例 4)
+                            </h2>
+                        </label>
+                        <input type="text" class="ticket-download-input" id="input5">
+                    </li>
+                    <li class="ticket-download-input-list">
+                        <label for="input6">
+                            <h2 class="ticket-download-input-title input-title6">
+                                席番号 (記入例 Kー1)
+                            </h2>
+                        </label>
+                        <input type="text" class="ticket-download-input" id="input6">
+                    </li>
+                    <li class="ticket-download-input-list ticket-download-input-list-input7">
+                        <label for="input7">
+                            <h2 class="ticket-download-input-title input-title7">
+                                自由記述（40字以内）
+                            </h2>
+                            <p class="count-container">現在<span id="count">0</span>文字</p>
+                        </label>
+                        <input type="text"  class="ticket-download-input" id="input7" maxlength="40">
+                    </li>
+                </ul>
+
+                <div class="ticket-download-compleate-container">
+                    <h2 class="ticket-download-compleate-title">
+                        完成画像
+                    </h2>
+                    <canvas id="myCanvas" class="ticket-download-compleate-img pop-img" width="841" height="470"
+                        style="border: 1px solid black;"></canvas>
+                </div>
+                <a href="#" class="ticket-download-button" id="saveButton">ダウンロード</a>
+            </section>
+
+        </section>
+
+
+    </div>
+
+
+
+    <footer>
+        <p>
+            MEMORIES COLLECTION
+        </p>
+    </footer>
+</body>
+
+</html>
